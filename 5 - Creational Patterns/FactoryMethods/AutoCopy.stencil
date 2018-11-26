@@ -1,0 +1,40 @@
+
+{% for type in types.implementing.AutoCopy %}
+extension {{ type.name }}: NSCopying {
+    func copy(with zone: NSZone? = nil) -> Any {
+        return {{type.name}}(
+    {% map type.variables into vars using var %}
+            {{ var.name }}: {{ var.name }}{% endmap %}
+    {{ vars|join:"," }})
+    }
+{% endfor %}
+}
+
+{% for type in types.implementing.AutoMutable %}
+class Mutable{{ type.name }} {
+    {% for member in type.variables %}
+    var {{ member.name }}: {{member.typeName}}
+    {% endfor %}
+
+    init(
+    {% map type.variables into vars using var %}
+         {{ var.name }}: {{ var.typeName }}{% endmap %}
+    {{ vars|join:"," }}) {
+    {% for member in type.variables %}
+        self.{{ member.name }} = {{member.name}}
+    {% endfor %}
+    }
+}
+{% endfor %}
+
+
+{% for type in types.implementing.AutoMutableCopy %}
+extension {{ type.name }}: NSMutableCopying {
+    func mutableCopy(with zone: NSZone? = nil) -> Any {
+        return Mutable{{type.name}}(
+        {% map type.variables into vars using var %}
+            {{ var.name }}: {{ var.name }}{% endmap %}
+        {{ vars|join:"," }})
+    }
+}
+{% endfor %}

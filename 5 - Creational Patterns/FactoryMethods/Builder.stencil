@@ -1,0 +1,26 @@
+
+{% for type in types.implementing.Buildable %}
+extension {{ type.name }} {
+    class Builder {
+        {% for member in type.variables %}
+        private var {{ member.name }}: {{member.typeName}}?
+        {% endfor %}
+
+        {% for member in type.variables %}
+        func set({{ member.name }}: {{member.typeName}}) -> Builder {
+            self.{{ member.name }} = {{ member.name }}
+            return self
+        }
+        {% endfor %}
+
+        // MARK: builder
+        func build() -> {{type.name}} {
+{% map type.variables into vars using var %}
+{{ var.name }}: {{ var.name }}!{% endmap %}
+            return {{type.name}}(
+{{ vars|join:"," }})
+
+        }
+    }
+}
+{% endfor %}
