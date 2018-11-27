@@ -1,0 +1,20 @@
+PODS:
+  - PromisesObjC (1.2.4)
+  - PromisesSwift (1.2.4):
+    - PromisesObjC (= 1.2.4)
+
+DEPENDENCIES:
+  - PromisesSwift (~> 1.2.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PromisesObjC
+    - PromisesSwift
+
+SPEC CHECKSUMS:
+  PromisesObjC: 4a3f2e30a0eb793e9bbb32cd367b625d4a14de5a
+  PromisesSwift: 8e1d2cdbc3cafb4f09d4b82df12f645bc19ab64e
+
+PODFILE CHECKSUM: bc60c27950e8292fec8684b8fb43f6ac93082b60
+
+COCOAPODS: 1.5.3

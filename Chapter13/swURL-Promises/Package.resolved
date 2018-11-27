@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FuturesAndPromises",
+        "repositoryURL": "/Users/sergio/tmp/packt-book/Chap13-code/FuturesAndPromises",
+        "state": {
+          "branch": null,
+          "revision": "93e62aafcd86762f2ca6f1d56d0ab2e7c37194ff",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
