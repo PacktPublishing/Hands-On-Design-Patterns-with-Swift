@@ -1,1 +1,4 @@
-../../../Expecta/src/matchers/EXPMatchers+notify.h
+#import "Expecta.h"
+
+EXPMatcherInterface(notify, (id expectedNotification));
+

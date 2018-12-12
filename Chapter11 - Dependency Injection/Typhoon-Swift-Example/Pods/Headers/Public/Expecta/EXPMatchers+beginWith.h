@@ -1,1 +1,5 @@
-../../../Expecta/src/matchers/EXPMatchers+beginWith.h
+#import "Expecta.h"
+
+EXPMatcherInterface(beginWith, (id expected));
+
+#define startWith beginWith
