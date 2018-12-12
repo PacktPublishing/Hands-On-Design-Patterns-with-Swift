@@ -28,6 +28,28 @@ let manager = RecipeCookingManager(recipe: recipe)
 let firstStep = manager.start()
 firstStep.complete()
 
+class AutomatedCooker: NSObject, RecipeCookingManagerDelegate {
+    func cook(recipe: Recipe) {
+        let manager = RecipeCookingManager(recipe: recipe)
+        manager.delegate = self // self is a RecipeCookingManagerDelegate
+        manager.start() // start cooking the first step should be in progress!
+        /* complete all steps */
+        recipe.steps.forEach { $0.complete()
+        }
+        // the did cook method should have been be called!
+    }
+    func manager(_ manager: RecipeCookingManager, didCook recipe: Recipe) {
+        // We're done!
+    }
+    func manager(_ manager: RecipeCookingManager, didCancel recipe: Recipe)
+    {
+        // The user cancelled
+    }
+    func manager(_ manager: RecipeCookingManager, didComplete recipe: Recipe) {
+
+    }
+
+}
 
 let a = objectAfter(array: array, object: "1")
 let b = objectAfter(array: array, object: "3")
@@ -84,25 +106,25 @@ extension NSString {
     }
 }
 
-//Measure(cups: 10)
-//Measure(amount: 10, unit: MeasureUnit.cups)
-//    .in(unit: .l)
-//
-//class LocationAware: NSObject {
-//    let manager = CLLocationManager()
-//
-//    override init() {
-//        super.init()
-//        manager.delegate = self
-//    }
-//}
-//
-//extension LocationAware: CLLocationManagerDelegate {
-//
-//    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        // do something with the updated location
-//    }
-//
-//    /* more delegation methods */
-//}
+Measure(cups: 10)
+Measure(amount: 10, unit: MeasureUnit.cups)
+    .in(unit: .l)
+
+class LocationAware: NSObject {
+    let manager = CLLocationManager()
+
+    override init() {
+        super.init()
+        manager.delegate = self
+    }
+}
+
+extension LocationAware: CLLocationManagerDelegate {
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        // do something with the updated location
+    }
+
+    /* more delegation methods */
+}
 
