@@ -9,13 +9,13 @@
 import Foundation
 
 //// Mixpanel Mock
-class Mixpanel {
+public class Mixpanel {
     private static let instance = MixpanelInstance()
-    static func mainInstance() -> MixpanelInstance {
+    public static func mainInstance() -> MixpanelInstance {
         return instance
     }
 }
-class MixpanelInstance {
+public class MixpanelInstance {
     public func track(event: String, properties: [String : String]?) {
     }
 }
