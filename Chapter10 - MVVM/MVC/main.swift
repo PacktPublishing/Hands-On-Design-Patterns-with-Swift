@@ -10,6 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
-let controller = ApplicationController()
-controller.start()
+//let controller = ApplicationController()
+//controller.start()
+
+let viewModel = ViewModel()
+let view = View(viewModel: viewModel)
+viewModel.start()
 

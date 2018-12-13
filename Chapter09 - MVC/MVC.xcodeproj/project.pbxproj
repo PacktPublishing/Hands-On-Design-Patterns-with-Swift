@@ -15,9 +15,6 @@
 		4A37C0812118AB6A00291BCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C0802118AB6A00291BCE /* ViewController.swift */; };
 		4A37C0832118AB8000291BCE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C0822118AB8000291BCE /* QuestionView.swift */; };
 		4A37C0852118AB9200291BCE /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C0842118AB9200291BCE /* PromptView.swift */; };
-		4A8C7A29212888B700DCE5B6 /* MVVMTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C7A28212888B700DCE5B6 /* MVVMTesting.swift */; };
-		4A8C7A2F212888E600DCE5B6 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C7A2E212888E600DCE5B6 /* MVVM.swift */; };
-		4A8C7A30212888F300DCE5B6 /* MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8C7A2E212888E600DCE5B6 /* MVVM.swift */; };
 		4A8C7A312128891700DCE5B6 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C0772118A9E900291BCE /* Question.swift */; };
 		4A8C7A322128891700DCE5B6 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C07A2118AA2A00291BCE /* QuestionController.swift */; };
 		4A8C7A332128892400DCE5B6 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37C0822118AB8000291BCE /* QuestionView.swift */; };
@@ -46,9 +43,6 @@
 		4A37C0822118AB8000291BCE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		4A37C0842118AB9200291BCE /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
 		4A8C7A26212888B700DCE5B6 /* MVVMTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A8C7A28212888B700DCE5B6 /* MVVMTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTesting.swift; sourceTree = "<group>"; };
-		4A8C7A2A212888B700DCE5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A8C7A2E212888E600DCE5B6 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				4A37C06C2118A98B00291BCE /* MVC */,
-				4A8C7A27212888B700DCE5B6 /* MVVMTesting */,
 				4A37C06B2118A98B00291BCE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +87,6 @@
 				4A37C0752118A99B00291BCE /* Controller */,
 				4A37C0742118A99400291BCE /* Model */,
 				4A37C06D2118A98B00291BCE /* main.swift */,
-				4A8C7A2E212888E600DCE5B6 /* MVVM.swift */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -125,15 +117,6 @@
 				4A37C0842118AB9200291BCE /* PromptView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		4A8C7A27212888B700DCE5B6 /* MVVMTesting */ = {
-			isa = PBXGroup;
-			children = (
-				4A8C7A28212888B700DCE5B6 /* MVVMTesting.swift */,
-				4A8C7A2A212888B700DCE5B6 /* Info.plist */,
-			);
-			path = MVVMTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +214,6 @@
 				4A37C0832118AB8000291BCE /* QuestionView.swift in Sources */,
 				4A37C07B2118AA2A00291BCE /* QuestionController.swift in Sources */,
 				4A37C07F2118AB4600291BCE /* ApplicationController.swift in Sources */,
-				4A8C7A2F212888E600DCE5B6 /* MVVM.swift in Sources */,
 				4A37C0812118AB6A00291BCE /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,8 +224,6 @@
 			files = (
 				4A8C7A332128892400DCE5B6 /* QuestionView.swift in Sources */,
 				4A8C7A312128891700DCE5B6 /* Question.swift in Sources */,
-				4A8C7A29212888B700DCE5B6 /* MVVMTesting.swift in Sources */,
-				4A8C7A30212888F300DCE5B6 /* MVVM.swift in Sources */,
 				4A8C7A322128891700DCE5B6 /* QuestionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

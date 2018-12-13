@@ -1,5 +1,5 @@
 //
-//  main.swift
+//  Player.swift
 //  MVC
 //
 //  Created by Florent Vilmart on 2018-08-06.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
-let controller = ApplicationController()
-controller.start()
-
+struct Player {
+    
+}
