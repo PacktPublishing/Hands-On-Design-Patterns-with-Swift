@@ -12,6 +12,6 @@ import AdapterPattern
 print("Hello, World!")
 
 let mpTracker = MixPanelTrackingAdapter()
-let firebaseTracker = AnalyticsTrackingAdapter()
+let firebaseTracker = FirebaseTrackingAdapter()
 
 Tracker.shared.set(trackingAdapter: mpTracker)

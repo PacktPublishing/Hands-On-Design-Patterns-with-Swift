@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Mixpanel
-
 
 public protocol Tracking {
     func record(event: String)
@@ -30,13 +28,13 @@ public class MixPanelTrackingAdapter: Tracking {
     }
 }
 
-extension MixpanelInstance: Tracking {
+extension Mixpanel: Tracking {
     public func record(event: String, properties: [String : String]?) {
         track(event: event, properties: properties)
     }
 }
 
-public class AnalyticsTrackingAdapter: Tracking {
+public class FirebaseTrackingAdapter: Tracking {
     public init() {}
 
     public func record(event: String, properties: [String : String]?) {
