@@ -8,11 +8,14 @@
 
 import Foundation
 
+//// Mixpanel Mock
 class Mixpanel {
-    private static let instance = Mixpanel()
-    static func mainInstance() -> Mixpanel {
+    private static let instance = MixpanelInstance()
+    static func mainInstance() -> MixpanelInstance {
         return instance
     }
+}
+class MixpanelInstance {
     public func track(event: String, properties: [String : String]?) {
     }
 }

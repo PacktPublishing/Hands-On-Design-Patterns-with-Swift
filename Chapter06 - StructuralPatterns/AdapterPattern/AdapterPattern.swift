@@ -28,7 +28,7 @@ public class MixPanelTrackingAdapter: Tracking {
     }
 }
 
-extension Mixpanel: Tracking {
+extension MixpanelInstance: Tracking {
     public func record(event: String, properties: [String : String]?) {
         track(event: event, properties: properties)
     }
