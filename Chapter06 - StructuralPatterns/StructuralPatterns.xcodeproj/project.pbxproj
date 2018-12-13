@@ -18,6 +18,10 @@
 		A6D1A27A21C1D60A00B16DAF /* AdapterPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD7834D20C6DEFC00C9ACDE /* AdapterPattern.framework */; };
 		A6D1A27B21C1D60A00B16DAF /* DecoratorPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD7837B20C714F200C9ACDE /* DecoratorPattern.framework */; };
 		A6D1A28021C1D8E300B16DAF /* Mixpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A27F21C1D8E300B16DAF /* Mixpanel.swift */; };
+		A6D1A28321C1DBAE00B16DAF /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28221C1DBAE00B16DAF /* Facade.swift */; };
+		A6D1A28621C1DC5A00B16DAF /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28521C1DC5A00B16DAF /* Proxy.swift */; };
+		A6D1A28921C1DD2700B16DAF /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28821C1DD2700B16DAF /* Composite.swift */; };
+		A6D1A28C21C1DE6300B16DAF /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		4AD7838B20C71B1F00C9ACDE /* DecoratorPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternTests.swift; sourceTree = "<group>"; };
 		4AD7838D20C71B1F00C9ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6D1A27F21C1D8E300B16DAF /* Mixpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mixpanel.swift; sourceTree = "<group>"; };
+		A6D1A28221C1DBAE00B16DAF /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		A6D1A28521C1DC5A00B16DAF /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		A6D1A28821C1DD2700B16DAF /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +117,12 @@
 				4A6801F3210F85D900668F93 /* Bridge.playground */,
 				4AD7834020C6DECD00C9ACDE /* StructuralPatterns */,
 				4AD7834E20C6DEFC00C9ACDE /* AdapterPattern */,
+				A6D1A28121C1DB8800B16DAF /* FacadePattern */,
+				A6D1A28421C1DC4900B16DAF /* ProxyPattern */,
+				A6D1A28721C1DCFE00B16DAF /* CompositePattern */,
 				4AD7837C20C714F200C9ACDE /* DecoratorPattern */,
 				4AD7838A20C71B1F00C9ACDE /* DecoratorPatternTests */,
+				A6D1A28A21C1DE3E00B16DAF /* FlyweightPattern */,
 				4AD7833F20C6DECD00C9ACDE /* Products */,
 				A6D1A27721C1D43E00B16DAF /* Frameworks */,
 			);
@@ -171,6 +183,38 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D1A28121C1DB8800B16DAF /* FacadePattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28221C1DBAE00B16DAF /* Facade.swift */,
+			);
+			path = FacadePattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28421C1DC4900B16DAF /* ProxyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28521C1DC5A00B16DAF /* Proxy.swift */,
+			);
+			path = ProxyPattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28721C1DCFE00B16DAF /* CompositePattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28821C1DD2700B16DAF /* Composite.swift */,
+			);
+			path = CompositePattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28A21C1DE3E00B16DAF /* FlyweightPattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */,
+			);
+			path = FlyweightPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD7834220C6DECD00C9ACDE /* main.swift in Sources */,
+				A6D1A28C21C1DE6300B16DAF /* Flyweight.swift in Sources */,
+				A6D1A28921C1DD2700B16DAF /* Composite.swift in Sources */,
+				A6D1A28621C1DC5A00B16DAF /* Proxy.swift in Sources */,
+				A6D1A28321C1DBAE00B16DAF /* Facade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

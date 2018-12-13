@@ -22,3 +22,25 @@ if USE_FIREBASE {
 }
 
 Tracker.shared.set(trackingAdapter: tracker)
+
+
+let testSuite = TestSuite(name: "Top Level Suite")
+testSuite.add(UnitTest(name: "First Test") {})
+testSuite.add(UnitTest(name: "Second Test") {})
+testSuite.add(
+    TestSuite(name: "ChildSuite", [
+        UnitTest(name: "Child 1") {},
+        UnitTest(name: "Child 2") {}
+        ]) )
+try? testSuite.run()
+
+
+let items = ["kale", "carrots", "salad", "carrots", "cucumber", "celery",
+               "pepper", "bell peppers", "carrots", "salad"]
+items.count // 10
+
+var shopping = ShoppingList()
+items.forEach {
+    shopping.add(item: $0)
+}
+print(shopping)
