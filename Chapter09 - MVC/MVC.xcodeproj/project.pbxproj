@@ -45,7 +45,7 @@
 		4A37C0802118AB6A00291BCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A37C0822118AB8000291BCE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		4A37C0842118AB9200291BCE /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
-		4A8C7A26212888B700DCE5B6 /* MVVMTestging.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTestging.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8C7A26212888B700DCE5B6 /* MVVMTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8C7A28212888B700DCE5B6 /* MVVMTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTesting.swift; sourceTree = "<group>"; };
 		4A8C7A2A212888B700DCE5B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A8C7A2E212888E600DCE5B6 /* MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				4A37C06C2118A98B00291BCE /* MVC */,
-				4A8C7A27212888B700DCE5B6 /* MVVMTestging */,
+				4A8C7A27212888B700DCE5B6 /* MVVMTesting */,
 				4A37C06B2118A98B00291BCE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4A37C06A2118A98B00291BCE /* MVC */,
-				4A8C7A26212888B700DCE5B6 /* MVVMTestging.xctest */,
+				4A8C7A26212888B700DCE5B6 /* MVVMTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,13 +127,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4A8C7A27212888B700DCE5B6 /* MVVMTestging */ = {
+		4A8C7A27212888B700DCE5B6 /* MVVMTesting */ = {
 			isa = PBXGroup;
 			children = (
 				4A8C7A28212888B700DCE5B6 /* MVVMTesting.swift */,
 				4A8C7A2A212888B700DCE5B6 /* Info.plist */,
 			);
-			path = MVVMTestging;
+			path = MVVMTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +156,9 @@
 			productReference = 4A37C06A2118A98B00291BCE /* MVC */;
 			productType = "com.apple.product-type.tool";
 		};
-		4A8C7A25212888B700DCE5B6 /* MVVMTestging */ = {
+		4A8C7A25212888B700DCE5B6 /* MVVMTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A8C7A2D212888B700DCE5B6 /* Build configuration list for PBXNativeTarget "MVVMTestging" */;
+			buildConfigurationList = 4A8C7A2D212888B700DCE5B6 /* Build configuration list for PBXNativeTarget "MVVMTesting" */;
 			buildPhases = (
 				4A8C7A22212888B700DCE5B6 /* Sources */,
 				4A8C7A23212888B700DCE5B6 /* Frameworks */,
@@ -168,9 +168,9 @@
 			);
 			dependencies = (
 			);
-			name = MVVMTestging;
-			productName = MVVMTestging;
-			productReference = 4A8C7A26212888B700DCE5B6 /* MVVMTestging.xctest */;
+			name = MVVMTesting;
+			productName = MVVMTesting;
+			productReference = 4A8C7A26212888B700DCE5B6 /* MVVMTesting.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 			projectRoot = "";
 			targets = (
 				4A37C0692118A98B00291BCE /* MVC */,
-				4A8C7A25212888B700DCE5B6 /* MVVMTestging */,
+				4A8C7A25212888B700DCE5B6 /* MVVMTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -389,14 +389,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MVVMTestging/Info.plist;
+				INFOPLIST_FILE = MVVMTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flovilmart.MVVMTestging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flovilmart.MVVMTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -407,14 +407,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MVVMTestging/Info.plist;
+				INFOPLIST_FILE = MVVMTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flovilmart.MVVMTestging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flovilmart.MVVMTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -441,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A8C7A2D212888B700DCE5B6 /* Build configuration list for PBXNativeTarget "MVVMTestging" */ = {
+		4A8C7A2D212888B700DCE5B6 /* Build configuration list for PBXNativeTarget "MVVMTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A8C7A2B212888B700DCE5B6 /* Debug */,

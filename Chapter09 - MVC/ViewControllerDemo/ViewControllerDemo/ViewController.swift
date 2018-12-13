@@ -87,29 +87,30 @@ class StateController<T>: UIViewController {
     }
 }
 
-class StateController<T>: UIViewController {
-    var state: State<T> = .unknown {
-        didSet {
-            guard isViewLoaded else { return }
-            self.updateState()
-        }
-    }
-
-    func updateState() {
-        switch state {
-        case .loading:
-            self.view.alpha = 0.0
-        case .loaded(_):
-            self.view.alpha = 1.0
-        default: break;
-        }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateState()
-    }
-}
+// Fixed
+//class StateController<T>: UIViewController {
+//    var state: State<T> = .unknown {
+//        didSet {
+//            guard isViewLoaded else { return }
+//            self.updateState()
+//        }
+//    }
+//
+//    func updateState() {
+//        switch state {
+//        case .loading:
+//            self.view.alpha = 0.0
+//        case .loaded(_):
+//            self.view.alpha = 1.0
+//        default: break;
+//        }
+//    }
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        updateState()
+//    }
+//}
 
 class StringStateController: StateController<String> {}
 

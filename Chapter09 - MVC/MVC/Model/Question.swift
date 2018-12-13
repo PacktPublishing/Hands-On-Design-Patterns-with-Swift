@@ -7,14 +7,14 @@
 //
 
 import Foundation
-enum Answer: String {
+enum BooleanAnswer: String {
     case `true`
     case `false`
 }
 
 struct Question {
     let question: String
-    let answer: Answer
+    let answer: BooleanAnswer
 }
 
 extension Question {
