@@ -145,5 +145,4 @@ class Reader {
 //let cardReader = Reader()
 //cardReader.start()
 
-let center = NotificationCenter()
 

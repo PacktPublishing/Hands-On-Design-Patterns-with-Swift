@@ -11,6 +11,23 @@ import AppKit
 
 print("Hello, World!")
 
+protocol BasicProtocol {}
+protocol ComplexProtocol: BasicProtocol {}
+
+class MySuperClass {}
+protocol AnotherProtocol {}
+
+class MyClass: MySuperClass, BasicProtocol, AnotherProtocol {}
+struct MyStruct: AnotherProtocol {}
+
+protocol DemoProtocol {
+    var aRequiredProperty: String { get set }
+    var aReadonlyProperty: Double { get }
+    static var aStaticProperty: Int { get set }
+    init(requiredProperty: String)
+    func doSomething() -> Bool
+}
+
 protocol Incrementing {
     mutating func increment() -> Int
 }

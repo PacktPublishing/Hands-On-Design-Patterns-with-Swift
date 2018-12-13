@@ -2,41 +2,12 @@ import Cocoa
 
 var str = "Hello, playground"
 
-//protocol Transportation {
-//    var numberOfWheels: Int { get }
-//    var canFly: Bool { get }
-//    var canFloat: Bool { get }
-//    var canDrive: Bool { get }
-//}
-//
-//protocol Flying {}
-//protocol Driving {}
-//protocol Floating {}
-//
-//extension Transportation {
-//    var canFly: Bool { return self is Flying }
-//    var canFloat: Bool { return self is Floating }
-//    var canDrive: Bool { return self is Driving }
-//}
-//
-//protocol Plane: Flying {}
-//
-//extension Plane where Self: Transportation {}
-//
-//protocol Hydroplane: Plane, Floating {}
-//
-//protocol Car: Driving {}
 protocol Food {}
 
 protocol Animal {
     associatedtype FoodType: Food
     func eat(food: FoodType)
 }
-
-//struct Cow: Animal {
-//    func eat(food: Food) {}
-//}
-
 
 struct Grass: Food {}
 struct Cow: Animal {

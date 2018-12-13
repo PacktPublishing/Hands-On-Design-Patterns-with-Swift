@@ -44,6 +44,7 @@ class ModelController {
     }
 
     deinit {
+        // Do not forget to remove the observer
         NotificationCenter.ui.removeObserver(uiObserver)
     }
 }
@@ -99,16 +100,15 @@ let view = NSView(frame: .zero)
 //    print("\(view.frame), \(change.oldValue) \(change.newValue)")
 //}
 
-//let observer = view.observe(\NSView.frame, options: [.new, .old]) { (view, change) in
-//    print("\(view.frame), \(change.oldValue!) \(change.newValue!)")
-//}
-//
-//
-//view.frame = NSRect(x: 0, y: 0, width: 100, height: 100)
-//view.frame = NSRect(x: 0, y: 0, width: 100, height: 200)
-//
-//observer.invalidate()
+    let observer = view.observe(\NSView.frame, options: [.new, .old]) { (view, change) in
+        print("\(view.frame), \(change.oldValue!) \(change.newValue!)")
+    }
 
+
+view.frame = NSRect(x: 0, y: 0, width: 100, height: 100)
+view.frame = NSRect(x: 0, y: 0, width: 100, height: 200)
+
+observer.invalidate()
 
 class MyObject: NSObject {
     @objc dynamic var string: String = ""
