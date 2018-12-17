@@ -15,6 +15,13 @@
 		4AD7838420C714FD00C9ACDE /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7838320C714FD00C9ACDE /* Burger.swift */; };
 		4AD7838C20C71B1F00C9ACDE /* DecoratorPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD7838B20C71B1F00C9ACDE /* DecoratorPatternTests.swift */; };
 		4AD7838E20C71B1F00C9ACDE /* DecoratorPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD7837B20C714F200C9ACDE /* DecoratorPattern.framework */; };
+		A6D1A27A21C1D60A00B16DAF /* AdapterPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD7834D20C6DEFC00C9ACDE /* AdapterPattern.framework */; };
+		A6D1A27B21C1D60A00B16DAF /* DecoratorPattern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD7837B20C714F200C9ACDE /* DecoratorPattern.framework */; };
+		A6D1A28021C1D8E300B16DAF /* Mixpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A27F21C1D8E300B16DAF /* Mixpanel.swift */; };
+		A6D1A28321C1DBAE00B16DAF /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28221C1DBAE00B16DAF /* Facade.swift */; };
+		A6D1A28621C1DC5A00B16DAF /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28521C1DC5A00B16DAF /* Proxy.swift */; };
+		A6D1A28921C1DD2700B16DAF /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28821C1DD2700B16DAF /* Composite.swift */; };
+		A6D1A28C21C1DE6300B16DAF /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,34 +31,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4AD7834C20C6DEFC00C9ACDE;
 			remoteInfo = AdapterPattern;
-		};
-		4AD7836520C6E5E700C9ACDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E115947D1CFF1491007F8B4F;
-			remoteInfo = Mixpanel;
-		};
-		4AD7836720C6E5E700C9ACDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E12782B31D4AB4B30025FB05;
-			remoteInfo = Mixpanel_tvOS;
-		};
-		4AD7836920C6E5E700C9ACDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E1F15FC91E64A10700391AE3;
-			remoteInfo = Mixpanel_macOS;
-		};
-		4AD7836B20C6E5F400C9ACDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E1F15FC81E64A10700391AE3;
-			remoteInfo = Mixpanel_macOS;
 		};
 		4AD7838F20C71B1F00C9ACDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -83,7 +62,6 @@
 		4AD7835020C6DEFC00C9ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AD7835720C6DF2D00C9ACDE /* AdapterPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPattern.swift; sourceTree = "<group>"; };
 		4AD7835D20C6E51A00C9ACDE /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
-		4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mixpanel.xcodeproj; path = "../../../../Downloads/mixpanel-swift-2.4.2/Mixpanel.xcodeproj"; sourceTree = "<group>"; };
 		4AD7837B20C714F200C9ACDE /* DecoratorPattern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DecoratorPattern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD7837D20C714F200C9ACDE /* DecoratorPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorPattern.h; sourceTree = "<group>"; };
 		4AD7837E20C714F200C9ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +69,11 @@
 		4AD7838920C71B1F00C9ACDE /* DecoratorPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD7838B20C71B1F00C9ACDE /* DecoratorPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternTests.swift; sourceTree = "<group>"; };
 		4AD7838D20C71B1F00C9ACDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6D1A27F21C1D8E300B16DAF /* Mixpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mixpanel.swift; sourceTree = "<group>"; };
+		A6D1A28221C1DBAE00B16DAF /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		A6D1A28521C1DC5A00B16DAF /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		A6D1A28821C1DD2700B16DAF /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D1A27A21C1D60A00B16DAF /* AdapterPattern.framework in Frameworks */,
+				A6D1A27B21C1D60A00B16DAF /* DecoratorPattern.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,9 +117,14 @@
 				4A6801F3210F85D900668F93 /* Bridge.playground */,
 				4AD7834020C6DECD00C9ACDE /* StructuralPatterns */,
 				4AD7834E20C6DEFC00C9ACDE /* AdapterPattern */,
+				A6D1A28121C1DB8800B16DAF /* FacadePattern */,
+				A6D1A28421C1DC4900B16DAF /* ProxyPattern */,
+				A6D1A28721C1DCFE00B16DAF /* CompositePattern */,
 				4AD7837C20C714F200C9ACDE /* DecoratorPattern */,
 				4AD7838A20C71B1F00C9ACDE /* DecoratorPatternTests */,
+				A6D1A28A21C1DE3E00B16DAF /* FlyweightPattern */,
 				4AD7833F20C6DECD00C9ACDE /* Products */,
+				A6D1A27721C1D43E00B16DAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,19 +154,9 @@
 				4AD7835720C6DF2D00C9ACDE /* AdapterPattern.swift */,
 				4AD7835D20C6E51A00C9ACDE /* Analytics.swift */,
 				4AD7835020C6DEFC00C9ACDE /* Info.plist */,
-				4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */,
+				A6D1A27F21C1D8E300B16DAF /* Mixpanel.swift */,
 			);
 			path = AdapterPattern;
-			sourceTree = "<group>";
-		};
-		4AD7836020C6E5E700C9ACDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4AD7836620C6E5E700C9ACDE /* Mixpanel.framework */,
-				4AD7836820C6E5E700C9ACDE /* Mixpanel.framework */,
-				4AD7836A20C6E5E700C9ACDE /* Mixpanel.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4AD7837C20C714F200C9ACDE /* DecoratorPattern */ = {
@@ -196,6 +176,45 @@
 				4AD7838D20C71B1F00C9ACDE /* Info.plist */,
 			);
 			path = DecoratorPatternTests;
+			sourceTree = "<group>";
+		};
+		A6D1A27721C1D43E00B16DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D1A28121C1DB8800B16DAF /* FacadePattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28221C1DBAE00B16DAF /* Facade.swift */,
+			);
+			path = FacadePattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28421C1DC4900B16DAF /* ProxyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28521C1DC5A00B16DAF /* Proxy.swift */,
+			);
+			path = ProxyPattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28721C1DCFE00B16DAF /* CompositePattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28821C1DD2700B16DAF /* Composite.swift */,
+			);
+			path = CompositePattern;
+			sourceTree = "<group>";
+		};
+		A6D1A28A21C1DE3E00B16DAF /* FlyweightPattern */ = {
+			isa = PBXGroup;
+			children = (
+				A6D1A28B21C1DE6300B16DAF /* Flyweight.swift */,
+			);
+			path = FlyweightPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +269,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4AD7836C20C6E5F400C9ACDE /* PBXTargetDependency */,
 			);
 			name = AdapterPattern;
 			productName = AdapterPattern;
@@ -330,12 +348,6 @@
 			mainGroup = 4AD7833520C6DECD00C9ACDE;
 			productRefGroup = 4AD7833F20C6DECD00C9ACDE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4AD7836020C6E5E700C9ACDE /* Products */;
-					ProjectRef = 4AD7835F20C6E5E700C9ACDE /* Mixpanel.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4AD7833D20C6DECD00C9ACDE /* StructuralPatterns */,
@@ -345,30 +357,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4AD7836620C6E5E700C9ACDE /* Mixpanel.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Mixpanel.framework;
-			remoteRef = 4AD7836520C6E5E700C9ACDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4AD7836820C6E5E700C9ACDE /* Mixpanel.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Mixpanel.framework;
-			remoteRef = 4AD7836720C6E5E700C9ACDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4AD7836A20C6E5E700C9ACDE /* Mixpanel.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Mixpanel.framework;
-			remoteRef = 4AD7836920C6E5E700C9ACDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4AD7834B20C6DEFC00C9ACDE /* Resources */ = {
@@ -400,6 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD7834220C6DECD00C9ACDE /* main.swift in Sources */,
+				A6D1A28C21C1DE6300B16DAF /* Flyweight.swift in Sources */,
+				A6D1A28921C1DD2700B16DAF /* Composite.swift in Sources */,
+				A6D1A28621C1DC5A00B16DAF /* Proxy.swift in Sources */,
+				A6D1A28321C1DBAE00B16DAF /* Facade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AD7835E20C6E51A00C9ACDE /* Analytics.swift in Sources */,
+				A6D1A28021C1D8E300B16DAF /* Mixpanel.swift in Sources */,
 				4AD7835820C6DF2D00C9ACDE /* AdapterPattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,11 +428,6 @@
 			isa = PBXTargetDependency;
 			target = 4AD7834C20C6DEFC00C9ACDE /* AdapterPattern */;
 			targetProxy = 4AD7835520C6DF0E00C9ACDE /* PBXContainerItemProxy */;
-		};
-		4AD7836C20C6E5F400C9ACDE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Mixpanel_macOS;
-			targetProxy = 4AD7836B20C6E5F400C9ACDE /* PBXContainerItemProxy */;
 		};
 		4AD7839020C71B1F00C9ACDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -566,6 +554,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -575,6 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -583,6 +579,7 @@
 		4AD7835320C6DEFC00C9ACDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -594,7 +591,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdapterPattern",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AdapterPattern/Info.plist;
@@ -618,6 +615,7 @@
 		4AD7835420C6DEFC00C9ACDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -629,7 +627,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdapterPattern",
+					"$(PROJECT_DIR)",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AdapterPattern/Info.plist;
@@ -652,6 +650,7 @@
 		4AD7838120C714F200C9ACDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -661,6 +660,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdapterPattern",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = DecoratorPattern/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -682,6 +685,7 @@
 		4AD7838220C714F200C9ACDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -691,6 +695,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdapterPattern",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = DecoratorPattern/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -713,6 +721,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdapterPattern",
+				);
 				INFOPLIST_FILE = DecoratorPatternTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -730,6 +742,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdapterPattern",
+				);
 				INFOPLIST_FILE = DecoratorPatternTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

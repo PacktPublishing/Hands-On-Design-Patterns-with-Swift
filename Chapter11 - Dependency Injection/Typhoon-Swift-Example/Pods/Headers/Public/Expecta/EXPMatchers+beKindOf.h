@@ -1,1 +1,5 @@
-../../../Expecta/src/matchers/EXPMatchers+beKindOf.h
+#import "Expecta.h"
+
+EXPMatcherInterface(beKindOf, (Class expected));
+
+#define beAKindOf beKindOf

@@ -1,1 +1,3 @@
-../../../Expecta/src/matchers/EXPMatchers+endWith.h
+#import "Expecta.h"
+
+EXPMatcherInterface(endWith, (id expected));

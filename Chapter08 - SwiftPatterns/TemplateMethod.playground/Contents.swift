@@ -33,6 +33,7 @@ extension RecommendationEngine where Model == Restaurant {
 struct FavoriteEngine: RecommendationEngine {
     var models: [Restaurant]
 
+// Filter only the restaurants where you've been
     func filter(elements: [Restaurant]) -> [Restaurant] {
         return elements.filter { $0.beenThere }
     }

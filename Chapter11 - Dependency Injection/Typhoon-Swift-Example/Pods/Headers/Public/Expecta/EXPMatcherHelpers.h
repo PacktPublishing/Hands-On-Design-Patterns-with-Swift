@@ -1,1 +1,4 @@
-../../../Expecta/src/matchers/EXPMatcherHelpers.h
+#import <Foundation/Foundation.h>
+
+BOOL EXPIsValuePointer(NSValue *value);
+BOOL EXPIsNumberFloat(NSNumber *number);

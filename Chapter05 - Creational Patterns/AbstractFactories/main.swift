@@ -90,9 +90,9 @@ struct ServicesFactory {
         fatalError("abstract method")
     }
 
-//    func getUserLocationService() -> UserLocationService {
-//        return CommonUserLocationService()
-//    }
+    func getUserLocationService() -> UserLocationService {
+        return CommonUserLocationService()
+    }
 }
 
 

@@ -1,1 +1,11 @@
-../../../OCMockito/Source/OCMockito/Helpers/ReturnValueSetters/MKTLongReturnSetter.h
+//  OCMockito by Jon Reid, http://qualitycoding.org/about/
+//  Copyright 2015 Jonathan M. Reid. See LICENSE.txt
+
+#import "MKTReturnValueSetter.h"
+
+
+@interface MKTLongReturnSetter : MKTReturnValueSetter
+
+- (instancetype)initWithSuccessor:(MKTReturnValueSetter *)successor;
+
+@end

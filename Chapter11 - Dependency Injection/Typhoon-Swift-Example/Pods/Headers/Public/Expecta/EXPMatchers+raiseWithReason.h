@@ -1,1 +1,3 @@
-../../../Expecta/src/matchers/EXPMatchers+raiseWithReason.h
+#import "Expecta.h"
+
+EXPMatcherInterface(raiseWithReason, (NSString *expectedExceptionName, NSString *expectedReason));

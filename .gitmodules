@@ -1,0 +1,3 @@
+[submodule "Chapter06 - StructuralPatterns/mixpanel-swift"]
+	path = Chapter06 - StructuralPatterns/mixpanel-swift
+	url = git@github.com:mixpanel/mixpanel-swift.git

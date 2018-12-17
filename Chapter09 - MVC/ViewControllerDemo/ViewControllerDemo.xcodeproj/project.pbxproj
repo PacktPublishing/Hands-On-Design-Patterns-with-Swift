@@ -25,7 +25,7 @@
 		4A35A8AF211B3C33003776F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A35A8B5211B4132003776F4 /* OtherBadController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherBadController.xib; sourceTree = "<group>"; };
 		4A44104621230FB5008EDBE2 /* MassiveViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MassiveViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		4AAAD435211C916000861204 /* Removing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Removing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		4AAAD435211C916000861204 /* childViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = childViewController.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				4A44104621230FB5008EDBE2 /* MassiveViewController.playground */,
-				4AAAD435211C916000861204 /* Removing.playground */,
+				4AAAD435211C916000861204 /* childViewController.playground */,
 				4A35A8A2211B3C31003776F4 /* ViewControllerDemo */,
 				4A35A8A1211B3C31003776F4 /* Products */,
 			);
