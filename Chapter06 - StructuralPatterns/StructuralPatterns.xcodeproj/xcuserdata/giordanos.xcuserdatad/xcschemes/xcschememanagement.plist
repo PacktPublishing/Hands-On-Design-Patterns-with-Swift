@@ -7,7 +7,7 @@
 		<key>AdapterPattern.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>DecoratorPattern.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>StructuralPatterns.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
