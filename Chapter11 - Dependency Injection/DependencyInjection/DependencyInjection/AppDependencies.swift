@@ -67,7 +67,7 @@ class BasketController {
 
 protocol ProductsService {}
 class RestProductsService: ProductsService {
-    init(configuration: Configuration) {}
+    init(apiService: NetworkApi) {}
 }
 
 class ProductsController {
@@ -101,15 +101,15 @@ class ServiceLocator {
     func register(_ aa: Any, forType: Any) {}
 }
 
-let locator = ServiceLocator.instance
-locator.register( SqlLiteTodosRepository(),
-                  forType: TodosRepository.self)
-
-class TodosService {
-    private let repository: TodosRepository
-
-    init() {
-        let locator = ServiceLocator.instance
-        self.repository = locator.resolve(TodosRepository.self)
-    }
-}
+//let locator = ServiceLocator.instance
+//locator.register( SqlLiteTodosRepository(),
+//                  forType: TodosRepository.self)
+//
+//class TodosService {
+//    private let repository: TodosRepository
+//
+//    init() {
+//        let locator = ServiceLocator.instance
+//        self.repository = locator.resolve(TodosRepository.self)
+//    }
+//}
