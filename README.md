@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/hands-on-design-patterns-with-swift/9781789135565)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1789135567).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Hands-On Design Patterns with Swift
 
 <a href="https://www.packtpub.com/application-development/hands-design-patterns-swift?utm_source=github&utm_medium=repository&utm_campaign=9781789135565"><img src="https://www.packtpub.com/sites/default/files/9781789135565.png" alt="Hands-On Design Patterns with Swift" height="256px" align="right"></a>
